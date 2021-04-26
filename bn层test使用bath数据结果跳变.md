@@ -1,5 +1,8 @@
 ## BN层
 
+model.train() -> 所有的模型都设置为training = True (针对batchnorm, dropout, instancenorm)
+model.eval() -> 所有的模型都training = False
+
 参数 affine是是否使用w和b来学习
 
 参数 track_running_stats 判断是否跟踪 什么情况下都True
